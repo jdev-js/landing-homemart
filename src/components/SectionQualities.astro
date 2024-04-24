@@ -1,0 +1,32 @@
+---
+import CardQualities from './CardQualities.astro'
+import Lock from './icons/Lock.astro'
+import Bolt from './icons/Bolt.astro'
+import Badge from './icons/Badge.astro'
+---
+
+<section class='relative' aria-labelledby='qualities'>
+  <h2 class='sr-only'>Our Qualities</h2>
+  <div
+    class='container mx-auto max-w-5xl flex gap-12 flex-wrap items-start justify-contend md:justify-between'
+  >
+    <CardQualities
+      title='Save'
+      description='Our products are secure and private out-of-the-box'
+    >
+      <Lock />
+    </CardQualities>
+    <CardQualities
+      title='Efficient'
+      description='Feel good about your wallet and the environment'
+    >
+      <Bolt />
+    </CardQualities>
+    <CardQualities
+      title='Prove'
+      description='Leading the Smart Home world for 10 years'
+    >
+      <Badge />
+    </CardQualities>
+  </div>
+</section>
